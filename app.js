@@ -50,11 +50,7 @@ function setRandomColors(isInitial) {
             return
         }
 
-        const color = isInitial
-        ? colors[index]
-          ? colors[index]
-          : chroma.random()
-        : chroma.random()
+        const color = isInitial ? colors[index] : chroma.random()
         
         if (!isInitial) {
             colors.push(color)
